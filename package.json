@@ -2,19 +2,10 @@
   "name": "chef-delivery-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "18.x"
-  },
   "scripts": {
     "build": "rimraf ./build && tsc",
     "dev": "nodemon",
-    "star": "node src/index.ts",
-    "start": "node build/index.js",
-    "db:format": "prisma format",
-    "db:migrate": "prisma migrate dev",
-    "db:seed": "prisma db seed",
-    "vercel-build": "npx prisma migrate deploy"
+    "start": "node build/index.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.14",
