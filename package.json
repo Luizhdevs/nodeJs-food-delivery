@@ -5,7 +5,8 @@
   "scripts": {
     "build": "rimraf ./build && tsc",
     "dev": "nodemon",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "vercel-build": "npx prisma migrate deploy"
   },
   "devDependencies": {
     "@types/cors": "^2.8.14",
